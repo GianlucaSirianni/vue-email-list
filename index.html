@@ -22,7 +22,7 @@
     <div id='root'>
         <button @click="emailGenerator">Generate Email</button>
         <ul>
-            <li v-for="(element, index) in mailArray" :key='index'>{{element}}</li>
+            <li v-if="mailArray.length == 10" v-for="(element, index) in mailArray" :key='index'>{{element}}</li>
         </ul>
     </div>
 
